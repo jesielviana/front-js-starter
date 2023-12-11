@@ -11,8 +11,12 @@
 <body>
   <header>
     <nav>
-      <a href="/">Home</a>
-      <a href="usuarios.html">Usuários</a>
+      <a href="/">Home</>
+        <div>
+          <a href="usuarios.html">Usuários</a>
+          <span id="avatar" class="avatar"></span>
+          <span class="sair" id="btnSair">Sair</span>
+        </div>
     </nav>
   </header>
   <main>
@@ -24,34 +28,16 @@
         <td>Ação</td>
       </thead>
       <tbody>
-        <tr>
-          <td>Jesiel</td>
-          <td>jesiel@ifpi.edu.br</td>
-          <td><a href="#">alterar</a></td>
-        </tr>
-        <tr>
-          <td>Jesiel</td>
-          <td>jesiel@ifpi.edu.br</td>
-          <td><a href="#">alterar</a></td>
-        </tr>
-        <tr>
-          <td>Jesiel</td>
-          <td>jesiel@ifpi.edu.br</td>
-          <td><a href="#">alterar</a></td>
-        </tr>
-        <tr>
-          <td>Jesiel</td>
-          <td>jesiel@ifpi.edu.br</td>
-          <td><a href="#">alterar</a></td>
-        </tr>
-        <tr>
-          <td>Jesiel</td>
-          <td>jesiel@ifpi.edu.br</td>
-          <td><a href="#">alterar</a></td>
-        </tr>
+
       </tbody>
     </table>
   </main>
 </body>
+<script async type="module">
+  import usuarios from "./js/usuarios.js";
+  usuarios.verificaUsuarioAutenticado()
+  usuarios.logout();
+  usuarios.carregarUsuarios();
+</script>
 
 </html>

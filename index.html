@@ -22,12 +22,14 @@
       <input type="text" id="email">
       <label for="senha">Senha:</label>
       <input type="password" id="senha">
-      <button type="button">Entrar</button>
+      <button id="btnLogin" type="button">Entrar</button>
     </form>
   </main>
 </body>
 <script async type="module">
   import login from "./js/login.js";
+  login.login();
+  login.verificaUsuarioAutenticado();
 </script>
 
 </html>
